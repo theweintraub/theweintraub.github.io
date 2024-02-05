@@ -1,0 +1,261 @@
+/*--------------------------------------------------------------
+	event single page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#11.0	--------
+--------------------------------------------------------------*/
+.event-single-page .page-title {
+	@include background-style("../images/page-title/img-5.jpg", center center, cover, no-repeat, local);
+}
+
+.event-single-page .event-single-wrapper {
+
+	.event-single-date-slider {
+		padding-top: 41px;
+		position: relative;
+
+		@include media-query(767px) {
+			padding-top: 0;
+		}
+	}
+
+	.event-single-date-slider .date {
+		font-family: $heading-font;
+		background-color: $theme-primary-color;
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		font-weight: 600;
+		color: $white;
+		padding: 8px 14px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-transform: uppercase;
+
+		@include media-query(991px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			top: 4px;
+		}
+
+		@include media-query(767px) {
+			text-align: center;
+			max-width: 150px;
+			position: relative;
+			font-size: 13px;
+			font-size: calc-rem-value(13);
+			padding: 8px 10px;
+		}
+	}
+
+	.event-single-date-slider .date i {
+		display: inline-block;
+		padding-right: 5px;
+	}
+
+	.event-single-slider {
+		position: relative;
+
+		.owl-controls {
+			width: 100%;
+			position: absolute;
+			bottom: 35px;
+
+			@include media-query(991px) {
+				bottom: 25px;
+			}
+		}
+
+
+		.owl-controls .owl-dots .owl-dot span {
+			background: $white;
+			width: 15px;
+			height: 15px;
+			margin: 0 10px 0 0;
+
+			@include media-query(991px) {
+				width: 12px;
+				height: 12px;
+			}
+		}
+
+		.owl-controls .owl-dots .active span {
+			background: $theme-primary-color;
+		}
+	}
+
+	.event-details {
+		padding: 45px 100px 0 0;
+
+		@include media-query(1199px) {
+			padding: 45px 35px 0 0;
+		}
+
+		@include media-query(767px) {
+			padding: 30px 15px 0 0;
+		}
+
+		h2 {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+			margin: 0 0 0.5em;
+
+			@include media-query(991px) {
+				font-size: 27px;
+				font-size: calc-rem-value(27);
+			}
+
+			@include media-query(767px) {
+				font-size: 23px;
+				font-size: calc-rem-value(23);
+			}
+		}
+
+		p {
+			margin-bottom: 1.5em;
+		}
+
+		.event-info {
+			overflow: hidden;
+
+			li {
+				font-family: $heading-font;
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+				font-weight: 600;
+				color: $heading-font;
+				float: left;
+				margin-right: 40px;
+
+				@include media-query(991px) {
+					font-size: 16px;
+					font-size: calc-rem-value(16);
+					margin-right: 20px;
+				}
+
+				@include media-query(767px) {
+					font-size: 15px;
+					font-size: calc-rem-value(15);
+					margin: 0 15px 5px 0;
+				}
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+
+			li i {
+				display: inline-block;
+				padding-right: 10px;
+				color: $theme-primary-color;
+
+				@include media-query(767px) {
+					padding-right: 6px;
+				}
+
+			}
+		}
+	}
+
+	.event-location-map {
+		height: 250px;
+		margin: 35px 0;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+			pointer-events: none;
+		}
+	}
+
+	.join-share {
+		position: relative;
+
+		.theme-btn-s3 {
+			@include media-query(767px) {
+				padding: 5px 12px;
+			}
+		}
+	}
+
+	.share {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		@include media-query(767px) {
+			top: 8px;
+		}
+
+		span {
+			font-family: $heading-font;
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: bold;
+			color: $heading-color;
+			position: absolute;
+			top: 3px;
+
+			@include media-query(767px) {
+				font-size: 15px;
+				font-size: calc-rem-value(15);
+				top: 0;
+			}
+		}
+
+		ul {
+			overflow: hidden;
+			padding-left: 70px;
+
+			@include media-query(767px) {
+				padding-left: 50px;
+			}
+		}
+
+		li {
+			float: left;
+			margin-right: 20px;
+
+			@include media-query(767px) {
+				margin-right: 10px;
+			}
+		}
+
+		li:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			font-size: 24px;
+			font-size: calc-rem-value(24);
+
+			@include media-query(767px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		li:first-child a {
+			color: #0073dd;
+		}
+
+		li:nth-child(2) a {
+			color: #00bff3;
+		}
+
+		li:nth-child(3) a {
+			color: #e30e1f;
+		}
+
+		li:nth-child(4) a {
+			color: #2980b9;
+		}
+	}
+
+
+
+
+
+
+}

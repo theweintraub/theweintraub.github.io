@@ -1,0 +1,57 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 17/04/2017 07:14
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-global-warming:before { content: "\f100"; }
+.flaticon-medical-1:before { content: "\f101"; }
+.flaticon-water:before { content: "\f102"; }
+.flaticon-hot-air-baloon-flying:before { content: "\f103"; }
+.flaticon-house:before { content: "\f104"; }
+.flaticon-sprout:before { content: "\f105"; }
+.flaticon-people-1:before { content: "\f106"; }
+.flaticon-people:before { content: "\f107"; }
+.flaticon-coins-1:before { content: "\f108"; }
+.flaticon-money-5:before { content: "\f109"; }
+.flaticon-coins:before { content: "\f10a"; }
+.flaticon-calendar-page-with-circular-clock-symbol:before { content: "\f10b"; }
+.flaticon-money-4:before { content: "\f10c"; }
+.flaticon-money-2:before { content: "\f10d"; }
+.flaticon-money-3:before { content: "\f10e"; }
+.flaticon-money-1:before { content: "\f10f"; }
+.flaticon-business-2:before { content: "\f110"; }
+.flaticon-medical:before { content: "\f111"; }
+.flaticon-search:before { content: "\f112"; }
+.flaticon-magnifying-glass:before { content: "\f113"; }
+.flaticon-business-1:before { content: "\f114"; }
+.flaticon-business:before { content: "\f115"; }
+.flaticon-paper-bag:before { content: "\f116"; }
+.flaticon-money:before { content: "\f117"; }
+.flaticon-cellphone:before { content: "\f118"; }
+.flaticon-envelope-of-white-paper:before { content: "\f119"; }

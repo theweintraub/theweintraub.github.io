@@ -1,0 +1,163 @@
+.theme-btn {
+	font-family: $heading-font;
+	background-color: $theme-primary-color;
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	font-size: calc-rem-value(18);
+	font-weight: 600;
+	color: $white;
+    text-align: center;
+	padding: 0 40px;
+	border: 0;
+	display: inline-block;
+	@include rounded-border(0);
+    position: relative;
+    overflow: hidden;
+	text-transform: uppercase;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    @include transition-time(0.3s);
+
+	&:before {
+		content: attr(data-text); 
+		width: 100%;
+		height: 100%;
+		line-height: 45px;
+		position: absolute; 
+		top: -100px;	
+		left: 0;
+		@include transition-time(0.3s);
+
+		@include media-query(991px) {
+			line-height: 40px;
+		}
+
+		@include media-query(767px) {
+			line-height: 35px;
+		}
+	}
+
+	&:hover {
+		line-height: 120px;
+	}
+
+	&:hover:before { 
+		top: 0;	
+	}
+
+
+	@include media-query(991px) {
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		padding: 0 35px;
+	}
+
+	@include media-query(767px) {
+		height: 35px;
+		line-height: 35px;
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		padding: 0 30px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($theme-primary-color, 5%);
+		color: $white;
+	}
+}
+
+
+.theme-btn-s2 {
+	background-color: $theme-secondary-color;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-size: calc-rem-value(14);
+	font-weight: 600;
+	color: $white;
+	padding: 0 40px 0 20px;
+	border: 0;
+	position: relative;
+	@include rounded-border(0);
+	text-transform: capitalize;
+	@include transition-time(0.2s);
+
+	i {
+		background-color: $white;
+		width: 27px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: $theme-secondary-color;
+		position: absolute;
+		right: 0;
+		@include transition-time(0.2s);
+	}
+
+	&:hover {
+		background-color: transparentize($theme-secondary-color, 0.1);
+		color: $white;
+
+		i {
+			background-color: transparentize($white, 0.1);
+		}
+	}
+}
+
+.theme-btn-s3 {
+	font-family: $heading-font;
+	background-color: $white;
+	font-size: 18px;
+	font-size: calc-rem-value(18);
+	font-weight: 600;
+	color: $theme-primary-color;
+	padding: 7px 35px;
+	border: 2px solid $theme-primary-color;
+	text-transform: uppercase;
+	@include transition-time(0.3s);
+
+	@include media-query(991px) {
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		padding: 5px 30px;
+	}
+
+	@include media-query(767px) {
+		font-size: 15px;
+		font-size: calc-rem-value(15);
+		padding: 5px 30px;
+	}
+
+	&:hover {
+		background-color: $theme-primary-color;
+		color: $white;
+	}
+}
+
+
+.theme-btn-s4 {
+	@extend .theme-btn;
+	padding: 0 45px 0 25px;
+	position: relative;
+
+	i {
+		position: absolute;
+		right: 25px;
+		top: 50%;
+		@include translatingY();
+	}
+
+	&:before {
+		padding: 0 45px 0 25px;
+	}
+}
+

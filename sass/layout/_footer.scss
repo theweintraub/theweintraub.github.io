@@ -1,0 +1,160 @@
+/*--------------------------------------------------------------
+#0.5	footer
+--------------------------------------------------------------*/
+.site-footer {
+	background-color: $site-footer-bg-color;
+	padding: 130px 0 120px;
+
+	@include media-query(1199px) {
+		padding: 110px 0 100px;
+	}
+
+	@include media-query(991px) {
+		padding: 100px 0 40px;
+	}
+
+	@include media-query(767px) {
+		padding: 80px 0 20px;
+	}
+
+	.container > .row > .col {
+		@include media-query(991px) {
+			margin-bottom: 50px;
+		}
+	}
+
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	li,
+	a,
+	p {
+		color: $white;
+	}
+
+	.widget-title {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		font-weight: bold;
+		margin: 16px 0 1.5em;
+		text-transform: uppercase;
+
+		@include media-query(1199px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+			margin: 13px 0 1.5em;
+		}
+
+		@include media-query(991px) {
+			font-size: 23px;
+			font-size: calc-rem-value(23);
+			margin: 12px 0 1.3em;
+		}
+
+		@include media-query(767px) {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			margin: 0 0 1em;
+		}
+	}
+
+	.about-widget p,
+	.widget li {
+		font-size: 17px;
+		font-weight: calc-rem-value(17);
+
+		@include media-query(1199px) {
+			font-size: 16px;
+			font-weight: calc-rem-value(16);
+		}
+
+		@include media-query(767px) {
+			font-size: 15px;
+			font-weight: calc-rem-value(15);
+		}
+	}
+
+	.widget ul > li {
+		margin-bottom: 14px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.widget ul li a:hover {
+		color: $theme-primary-color;
+	}
+
+	.social-links a {
+		font-size: 22px;
+		font-size: calc-rem-value(22);
+		color: $white;
+		@include transition-time(0.5s);
+
+		@include media-query(991px) {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+		}
+	}
+
+	.social-links a:hover {
+		@include rotating(360deg);
+	}
+
+	.social-links li {
+		margin-right: 15px;
+
+		@include media-query(991px) {
+			margin-right: 12px;
+		}
+	}
+
+	.social-links li:last-child {
+		margin-right: 0;
+	}
+
+	/*** about wiget ***/
+	.about-widget .company-info {
+		margin-bottom: 20px;
+	}
+
+	.about-widget .footer-logo {
+		margin-bottom: 28px;
+
+		@include media-query(991px) {
+			max-width: 200px;
+			margin-bottom: 17px;
+		}
+	}
+
+	/*** donate widget ***/
+	.donate-widget {
+		@include widther(1200px) {
+			padding-left: 30px;
+		}
+	}
+
+	/*** twitter widget ***/
+	.twitter-post-widget ul li {
+		line-height: 1.7em;
+		margin-bottom: 30px;
+
+		@include media-query(991px) {
+			margin-bottom: 15px;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		a {
+			display: inline-block;
+			color: $theme-primary-color;
+			padding-right: 5px;
+
+		}
+	}
+}

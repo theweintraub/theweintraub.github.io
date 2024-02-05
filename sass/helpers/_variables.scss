@@ -1,0 +1,34 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Dosis:500,600,700|Source+Sans+Pro:400,600');
+
+// fonts
+$base-font-size: 16;
+
+$base-font: 'Source Sans Pro', sans-serif;
+$heading-font: 'Dosis', sans-serif;
+
+// color
+$dark-gray: #2a2a2a;
+$white: #fff;
+$black: #000;
+$powder-green: #23a884;
+$powder-blue: #123a54;
+$powder-gray: #5a6871;
+$light-gray: #f0f3f8;
+$medium-gray: #53636c;
+$blue-gray: #6a7f8d;
+$black2: #181818;
+$yellow: #f3d000;
+
+$theme-primary-color: $powder-green;
+$theme-secondary-color: $powder-blue;
+$body-bg-color: $white;
+$section-bg-color: $light-gray;
+$text-color: $powder-gray;
+$heading-color: $powder-blue;
+$topbar-social-follow-color: $medium-gray;
+$causes-remaining-deays-color: $blue-gray;
+$site-footer-bg-color: $black2;
+$raging-color: $yellow;

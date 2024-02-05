@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+	causes page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#5.0	causes
+--------------------------------------------------------------*/
+.causes-page .causes {
+	@include media-query(991px) {
+		padding-bottom: 100px;
+	}
+	
+	@include media-query(767px) {
+		padding-bottom: 80px;
+	}
+	
+	.content > .col {
+		@include widther(992px) {
+			margin-bottom: 65px;
+		}
+	}
+
+	.pagination-wrapper {
+		margin-top: 35px;
+
+		@include media-query(1199px) {
+			margin-top: 15px;
+		}
+
+		@include media-query(991px) {
+			margin-top: 0;
+		}
+	}
+}

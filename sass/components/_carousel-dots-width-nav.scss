@@ -1,0 +1,81 @@
+.carousel-dots-with-nav {
+
+	.owl-controls {
+		position: relative;
+	}
+
+	.owl-controls .owl-dots div span {
+		background: $white;
+		width: 14px;
+		height: 14px;
+		border: 2px solid $theme-secondary-color;
+		margin: 0 15px 0 0;
+
+
+		@include media-query(767px) {
+			width: 12px;
+			height: 12px;
+			border: 2px solid $theme-secondary-color;
+		}
+
+	}
+
+	.owl-controls .owl-dots div:last-child span {
+		margin-right: 0;
+	}
+
+	.owl-controls .owl-dots .active span {
+		background: $theme-primary-color;
+		border-color: $theme-primary-color;
+	}
+
+	.owl-controls .owl-dots div:hover span {
+		background: $theme-primary-color;
+		border-color: $theme-primary-color;
+	}
+
+	.owl-controls .owl-nav {
+		width: 140px;
+		position: absolute;
+		left: 50%;
+		top: 40%;
+		@include center-by-translating();
+
+		@include media-query(767px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+			display: none;
+		}
+	}
+
+	.owl-controls .owl-nav .owl-prev,
+	.owl-controls .owl-nav .owl-next {
+		background: transparent;
+		color: $theme-secondary-color;
+		font-size: 35px;
+		font-size: calc-rem-value(35);
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 50%;
+		@include translatingY();
+
+		@include media-query(767px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+
+		&:hover {
+			background: transparent;
+			color: $theme-primary-color;
+		}
+	}
+
+	.owl-controls .owl-nav .owl-prev {
+		left: 0;
+	}
+
+	.owl-controls .owl-nav .owl-next {
+		right: 0;
+	}
+}

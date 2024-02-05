@@ -1,0 +1,44 @@
+.pagination-wrapper {
+	text-align: center;
+
+	ul {
+		display: inline-block;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	ul li {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		float: left;
+		margin-right: 5px;
+		border: 1px solid $theme-primary-color;
+
+		@include media-query(991px) {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+
+	ul .active a,
+	ul li a:hover {
+		background-color: $theme-primary-color;
+		color: $white;
+	}
+
+	ul li a {
+		font-family: $heading-font;
+		font-size: 20px;
+		font-size: calc-rem-value(20);
+		font-weight: 600;
+		color: $theme-primary-color;
+		display: block;
+
+		@include media-query(991px) {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.volunteers-grids {
+	
+	text-align: center;
+
+	.grid:hover .img-holder:before {
+		opacity: 1;
+	}
+
+	.img-holder {
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		@include rounded-border();
+		position: relative;
+
+		@include media-query(991px) {
+			width: 110px;
+			height: 110px;
+		}
+
+		@include media-query(767px) {
+			width: 90px;
+			height: 90px;
+		}
+
+		&:before {
+			content: "";
+			opacity: 0;
+			@include overlay(transparentize($theme-primary-color, 0.4));
+			@include rounded-border();
+			@include transition-time(0.3s);
+		}
+
+		img {
+			@include rounded-border();
+		}
+	}
+
+	.volunteers-details h4 {
+		font-size: 30px;
+		font-size: calc-rem-value(30);
+		margin: 0.5em 0 0;
+		text-transform: capitalize;
+
+		a {
+			color: $heading-color;
+			@include transition-time(0.3s);
+		}
+
+		a:hover {
+			color: $theme-primary-color;
+		}
+
+		@include media-query(1199px) {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+			margin: 0.5em 0 0.2em;
+		}
+
+		@include media-query(767px) {
+			font-size: 19px;
+			font-size: calc-rem-value(19);
+		}
+	}
+
+	.volunteers-details .volunteers-post {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+		color: $theme-primary-color;
+		margin-bottom: 20px;
+		display: block;
+
+		@include media-query(1199px) {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+		}
+
+		@include media-query(767px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	.social-links {
+		display: inline-block;
+
+		li {
+			margin-right: 15px;
+
+			@include media-query(1199px) {
+				margin-right: 10px;
+			}
+
+			@include media-query(767px) {
+				margin-right: 7px;
+			}
+		}
+
+		li:last-child {
+			margin-right: 0;
+		}
+
+		li a {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+			color: #53636c;
+
+			@include media-query(1199px) {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+			}
+
+			@include media-query(767px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		li a:hover {
+			color: $theme-primary-color;
+		}
+	}
+
+
+}

@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+	causes style 2 page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#6.0	recent-causes
+--------------------------------------------------------------*/
+.causes-s2-page .recent-causes {
+	background-color: $white;
+
+	.causes-s2-grids > .col {
+		margin-bottom: 35px;
+
+		@include media-query(620px) {
+			width: 100%;
+		}
+	}
+
+	.img-holder img {
+		@include media-query(620px) {
+			width: 100%;
+		}
+	}
+
+	.load-more {
+		text-align: center;
+		margin-top: 50px;
+
+		@include media-query(991px) {
+			margin-top: 25px;
+		}
+
+		@include media-query(767px) {
+			margin-top: 10px;
+		}
+
+		a {
+			@include widther(768px) {
+				padding: 0 25px 0 45px;
+			}
+
+			@include media-query(767px) {
+				padding: 0 20px;
+			}
+
+			&:before {
+				left: 10px;
+
+				@include media-query(767px) {
+					left: 0;
+				}
+			}
+		}
+
+		i {
+			display: inline-block;
+			padding-right: 5px;
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			@include translatingY();
+			@include media-query(767px) {
+				display: none;
+			}
+
+		}
+	}
+	
+}

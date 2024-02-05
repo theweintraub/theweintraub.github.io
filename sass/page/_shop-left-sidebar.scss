@@ -1,0 +1,69 @@
+/*--------------------------------------------------------------
+	Shop sidebar page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#15.0	products-section
+--------------------------------------------------------------*/
+.shop-with-sidebar-page .page-title {
+	@include background-style("../images/page-title/img-5.jpg", center center, cover, no-repeat, local);
+}
+
+.shop-with-sidebar-page .shop-main-content {
+	
+
+	.products-grids {
+		overflow: hidden;
+		margin: 0 -15px;
+
+		@include media-query(991px) {
+			margin-bottom: 40px;
+		}
+
+		@include media-query(767px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.products-grids .grid-wrapper {
+		width: 33%;
+		float: left;
+		padding: 0 7.5px;
+		margin-bottom: 20px;
+
+		@include media-query(1199px) {
+			width: 50%;
+		}
+
+		@include media-query(500px) {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.products-grids .grid {
+		margin: 5px 0;
+		box-shadow: none;
+		margin: 3px 0;
+	}
+
+	.products-grids .product-info h3 {
+		@include widther(1200px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+
+		}
+	}
+
+	.products-grids .product-info {
+		@include widther(1200px) {
+			padding: 22px 15px;
+		}
+	}
+
+	.product-info .rating i {
+		font-size: 15px;
+		font-size: calc-rem-value(15);
+	}
+
+
+}
