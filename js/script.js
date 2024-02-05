@@ -32,7 +32,7 @@
             if (navbar.hasClass("slideInn")) {
                 navbar.removeClass("slideInn");
             }
-            return false;            
+            return false;
         })
 
 
@@ -40,7 +40,7 @@
             if (navbar.hasClass("slideInn")) {
                 navbar.removeClass("slideInn");
             }
-            return false;            
+            return false;
         })
 
     }
@@ -52,7 +52,7 @@
     function addClassForSmallNav() {
         var windowWidth = window.innerWidth,
             mainNav = $("#navbar > ul");
-        
+
         if (windowWidth < 992) {
             mainNav.addClass("small-nav");
         } else {
@@ -185,13 +185,13 @@
         if ($(".hero-slider").length) {
             $(".hero-slider").owlCarousel({
                 items: 1,
-                autoplay: true,
-                loop: true,
+                autoplay: false,
+                loop: false,
                 mouseDrag: false,
                 smartSpeed: 800,
                 navSpeed: 800,
                 dotsSpeed: 800,
-                nav: true,
+                nav: false,
                 navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
                 animateOut: 'fadeOut'
             });
@@ -260,12 +260,12 @@
     // Function for sticky menu
     function stickIt($stickyClass) {
         var orgElementPos = $(".original").offset();
-        var orgElementTop = orgElementPos.top;   
+        var orgElementTop = orgElementPos.top;
 
         if ($(window).scrollTop() >= (orgElementTop)) {
             var orgElement = $(".original");
             var coordsOrgElement = orgElement.offset();
-            var leftOrgElement = coordsOrgElement.left;  
+            var leftOrgElement = coordsOrgElement.left;
             var widthOrgElement = orgElement.css("width");
 
             $stickyClass.css({
@@ -303,7 +303,7 @@
 
     /*------------------------------------------
         = ACTIVE POPUP IMAGE
-    -------------------------------------------*/  
+    -------------------------------------------*/
     if ($(".fancybox").length) {
         $(".fancybox").fancybox({
             openEffect  : "elastic",
@@ -315,14 +315,14 @@
 
     /*------------------------------------------
         = POPUP VIDEO
-    -------------------------------------------*/  
+    -------------------------------------------*/
     if ($(".video-play").length) {
         $(".video-play").on("click", function(){
             $.fancybox({
                 href: this.href,
                 type: $(this).data("type"),
                 'title'         : this.title,
-                helpers     : {  
+                helpers     : {
                     title : { type : 'inside' },
                     media : {}
                 },
@@ -332,13 +332,13 @@
                 }
             });
             return false
-        });    
+        });
     }
-    
+
 
     /*------------------------------------------
         = ACTIVE GALLERY POPUP IMAGE
-    -------------------------------------------*/  
+    -------------------------------------------*/
     if ($(".popup-gallery").length) {
         $('.popup-gallery').magnificPopup({
             delegate: 'a',
@@ -357,7 +357,7 @@
                     return openerElement.is('img') ? openerElement : openerElement.find('img');
                 }
             }
-        });    
+        });
     }
 
 
@@ -389,7 +389,7 @@
     if ($(".header-search-area").length) {
         var serachFormBox = $(".header-search-area .header-search-form");
         var openSeachBtn = $(".header-search-area .open-btn");
-        
+
         $(document.body).append(serachFormBox);
         serachFormBox.hide();
 
@@ -439,7 +439,7 @@
                 var percent = current_item.data('percent');
                 current_item.css('width', percent + '%').addClass('appeared');
             }
-            
+
         });
     };
 
@@ -456,7 +456,7 @@
                 var percent = current_item.data('percent');
                 current_item.append('<span>' + percent + '%' + '</span>').css('width', percent + '%').addClass('appeared');
             }
-            
+
         });
     };
 
@@ -471,7 +471,7 @@
                 current_item.append('<span>' + percent + '%' + '</span>').css('width', percent + '%').addClass('appeared');
             }
         });
-    };    
+    };
 
 
     /*------------------------------------------
@@ -514,7 +514,7 @@
             nav: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-    }    
+    }
 
 
     /*------------------------------------------
@@ -525,7 +525,7 @@
             items: 1,
             mouseDrag: false,
         });
-    }    
+    }
 
 
     /*------------------------------------------
@@ -598,7 +598,7 @@
                     var $this = $(this);
                     $this.find('span').html(Math.round(100 * stepValue) + '<i>%</i>');
                 });
-            }                
+            }
         });
     };
 
@@ -622,7 +622,7 @@
                     var $this = $(this);
                     $this.find("span").html(Math.round(100 * stepValue) + "<i>%</i>");
                 });
-            }                
+            }
         });
     };
 
@@ -646,7 +646,7 @@
                     var $this = $(this);
                     $this.find("span").html(Math.round(100 * stepValue) + "<i>%</i>");
                 });
-            }                
+            }
         });
     };
 
@@ -665,7 +665,7 @@
             nav: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
-    }   
+    }
 
 
     /*------------------------------------------
@@ -807,11 +807,11 @@
 
     /*-------------------------------------------------------------
         = POPUP GOOGLE MAP FOR CONTACT PAGE
-    -------------------------------------------------------------*/  
+    -------------------------------------------------------------*/
     if ($(".map-link").length) {
         $('.map-link').magnificPopup({
             type: 'iframe'
-        }); 
+        });
     }
 
 
@@ -913,7 +913,7 @@
 
     /*------------------------------------------
         = CONTACT FORM SUBMISSION
-    -------------------------------------------*/  
+    -------------------------------------------*/
     if ($("#contact-form").length) {
         $("#contact-form").validate({
             rules: {
@@ -955,7 +955,7 @@
                         }, 3000);
                     }
                 });
-                
+
                 return false; // required to block normal submit since you used ajax
             }
 
@@ -964,7 +964,7 @@
 
 
     /*==========================================================================
-        WHEN DOCUMENT LOADING 
+        WHEN DOCUMENT LOADING
     ==========================================================================*/
     $(window).on('load', function() {
 
@@ -1001,9 +1001,9 @@
         // set newsletter two col equial
         if ($(".newsletter").length) {
             setTwoColEqHeight($(".newsletter .children-holder"), $(".newsletter .subscribe"));
-        }  
+        }
 
-        // All page smooth scrolling except app landing home 
+        // All page smooth scrolling except app landing home
         if ($(".page-wrapper").length) {
             smoothScrolling($("#navbar > ul > li > a:not(.dropdown-toggle)"), 60);
         }
@@ -1016,15 +1016,15 @@
         WHEN WINDOW SCROLL
     ==========================================================================*/
     $(window).on("scroll", function() {
-        
+
         bgParallax();
 
         if ($(".header-style1").length) {
-            stickIt($(".sticky")); 
+            stickIt($(".sticky"));
         }
 
         if ($(".header-style2").length) {
-            stickIt($(".sticky-s2")); 
+            stickIt($(".sticky-s2"));
         }
 
         // Add sticky header for home style three
@@ -1043,7 +1043,7 @@
         activeMenuItem($("#navbar"));
 
 
-        toggleBackToTopBtn();        
+        toggleBackToTopBtn();
 
     });
 
@@ -1053,17 +1053,17 @@
         WHEN WINDOW RESIZE
     ==========================================================================*/
     $(window).on("resize", function() {
-        
+
         addClassForSmallNav();
 
         smallNavFunctinality();
 
         if ($(".header-style1").length) {
-            stickIt($(".sticky")); 
-        } 
+            stickIt($(".sticky"));
+        }
 
         if ($(".header-style2").length) {
-            stickIt($(".sticky-s2")); 
+            stickIt($(".sticky-s2"));
         }
 
         // set cta-2 two col equial
@@ -1074,8 +1074,8 @@
         // set newsletter two col equial
         if ($(".newsletter").length) {
             setTwoColEqHeight($(".newsletter .children-holder"), $(".newsletter .subscribe"));
-        }  
-        
+        }
+
     });
 
 
