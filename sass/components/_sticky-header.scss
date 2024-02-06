@@ -35,7 +35,7 @@
 	}
 
 	@include media-query(991px) {
-		border-bottom: 1px solid lighten($black, 95%);		
+		border-bottom: 1px solid lighten($black, 95%);
 	}
 
 	@include media-query(1199px) {
@@ -60,7 +60,7 @@
 	@extend .sticky;
 
 	@include widther(992px) {
-		background-color: $theme-secondary-color;
+		background-color: #c3486d;
 	}
 
 	-webkit-animation: navigationFlipIn 1s;
@@ -74,7 +74,7 @@
 /*** one page sticky header ***/
 .one-page .header-style3 nav.sticky-s3 {
 	border-bottom: 0;
-	
+
 	@include media-query(991px) {
 		border-bottom: 1px solid lighten($black, 95%);
 	}
@@ -99,5 +99,5 @@
 		.mini-cart {
 			top: 20px;
 		}
-	}	
+	}
 }

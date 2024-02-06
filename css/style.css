@@ -177,7 +177,7 @@ a:focus {
 }
 
 .back-to-top {
-  background-color: rgba(35, 168, 132, 0.8);
+  background-color: #c3486d;
   width: 45px;
   height: 45px;
   line-height: 45px;
@@ -641,7 +641,7 @@ a:focus {
 
 @media screen and (min-width: 992px) {
   .header-style3 nav.sticky-s3 {
-    background-color: #123a54;
+    background-color: #c3486d;
   }
 }
 
@@ -3215,7 +3215,7 @@ a:focus {
 
 .site-header #navbar a:hover,
 .site-header #navbar ul li.current a {
-  color: #23a884;
+  color: #000;
 }
 
 .site-header #navbar > ul {
@@ -4797,7 +4797,7 @@ a:focus {
 #0.5	footer
 --------------------------------------------------------------*/
 .site-footer {
-  background-color: #181818;
+  background-color: #c3486d;
   padding: 130px 0 120px;
   /*** about wiget ***/
   /*** donate widget ***/
@@ -9238,7 +9238,7 @@ a:focus {
 .contact-page .contact-section-wrapper .contact-block .contact-info li .fa:before {
   font-size: 20px;
   font-size: 1.25rem;
-  color: #23a884;
+  color: #c3486d;
 }
 
 @media (max-width: 1199px) {
@@ -11492,12 +11492,7 @@ a:focus {
   font-size: 2.25rem;
   line-height: 1.3em;
   margin: 0 0 0.9em;
-}
-
-@media screen and (min-width: 1200px) {
-  .one-page .contact-section-wrapper .contact-block h2 {
-    padding: 0 450px 0 0;
-  }
+  text-align: center;
 }
 
 @media (max-width: 991px) {
@@ -11508,10 +11503,6 @@ a:focus {
 }
 
 .one-page .contact-section-wrapper .contact-block .contact-info,
-.one-page .contact-section-wrapper .contact-block .contact-form {
-  width: 50%;
-  float: left;
-}
 
 @media (max-width: 767px) {
   .one-page .contact-section-wrapper .contact-block .contact-info,
@@ -11519,10 +11510,6 @@ a:focus {
     width: 100%;
     float: none;
   }
-}
-
-.one-page .contact-section-wrapper .contact-block .contact-info {
-  padding-right: 80px;
 }
 
 @media (max-width: 991px) {
@@ -11574,7 +11561,7 @@ a:focus {
 .one-page .contact-section-wrapper .contact-block .contact-info li .fa:before {
   font-size: 20px;
   font-size: 1.25rem;
-  color: #23a884;
+  color: #c3486d;
 }
 
 @media (max-width: 1199px) {
@@ -11668,4 +11655,28 @@ a:focus {
 
 .one-page .contact-section-wrapper .contact-block .contact-form .form .submit-btn {
   margin-bottom: 0;
+}
+
+.target-override .grid {
+  background-color: #c3486d !important;
+}
+
+.target-override .grid a {
+  color: #fff !important;
+}
+
+.target-override .grid p {
+  color: #fff !important;
+}
+
+button {
+  background-color: #c3486d !important;
+}
+
+li i {
+  color: #c3486d !important;
+}
+
+.heading-subline {
+  color: #fff;
 }
