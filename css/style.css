@@ -648,6 +648,7 @@ a:focus {
 /*** one page sticky header ***/
 .one-page .header-style3 nav.sticky-s3 {
   border-bottom: 0;
+  background-color: #c3486d;
 }
 
 @media (max-width: 991px) {
@@ -4009,7 +4010,7 @@ a:focus {
 
 @media (max-width: 991px) {
   .one-page .header-style3 .topbar {
-    background-color: #123a54;
+    background-color: #c3486d;
     height: 80px;
     padding: 15px 0;
   }
