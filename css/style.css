@@ -11681,3 +11681,8 @@ li i {
 .heading-subline {
   color: #fff;
 }
+
+.center-flex {
+  justify-content: center;
+  display: flex;
+}
